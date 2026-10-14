@@ -40,18 +40,6 @@ class MainActivity : AppCompatActivity() {
             lastTenant = tenant
         }
 
-        // ── CALL TENANT button (implicit Intent) ──────────────────
-        // If you do not have a callButton in activity_main.xml yet,
-        // skip this block for now or add the button first.
-        // binding.callButton.setOnClickListener {
-        //     val tenant = lastTenant
-        //     if (tenant == null) {
-        //         Toast.makeText(this, "Save a tenant first", Toast.LENGTH_SHORT).show()
-        //         return@setOnClickListener
-        //     }
-        //     val intent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:${tenant.phone}"))
-        //     startActivity(intent)
-        // }
 
         binding.callButton.setOnClickListener {
             val tenant = lastTenant
